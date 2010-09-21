@@ -1,0 +1,79 @@
+dir /.info 755 0 0
+dir /dev 755 0 0
+dir /lib 755 0 0
+dir /lib/modules 755 0 0
+dir /mnt 755 0 0
+dir /mnt/.lfs 755 0 0
+dir /proc 755 0 0
+dir /res 755 0 0
+dir /res/images 755 0 0
+dir /sbin 755 0 0
+dir /sys 755 0 0
+dir /system 755 0 0
+dir /system/etc 755 0 0
+dir /tmp 755 0 0
+dir /tmp/bootchart 755 0 0
+file /.info/rootfs.info /Volumes/Data/koush/src/fascinate/initramfs/.info/rootfs.info 666 0 0
+file /default.prop /Volumes/Data/koush/src/fascinate/initramfs/default.prop 777 0 0
+file /dev/stgloc /Volumes/Data/koush/src/fascinate/initramfs/dev/stgloc 666 0 0
+file /fota.rc /Volumes/Data/koush/src/fascinate/initramfs/fota.rc 777 0 0
+file /init.rc /Volumes/Data/koush/src/fascinate/initramfs/init.rc 777 0 0
+file /init.smdkc110.rc /Volumes/Data/koush/src/fascinate/initramfs/init.smdkc110.rc 777 0 0
+file /init.smdkc110.sh /Volumes/Data/koush/src/fascinate/initramfs/init.smdkc110.sh 777 0 0
+file /lib/modules/dhd.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/dhd.ko 666 0 0
+file /lib/modules/dpram.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/dpram.ko 666 0 0
+file /lib/modules/dpram_recovery.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/dpram_recovery.ko 666 0 0
+file /lib/modules/drop_caches.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/drop_caches.ko 666 0 0
+file /lib/modules/fsr.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/fsr.ko 666 0 0
+file /lib/modules/fsr_stl.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/fsr_stl.ko 666 0 0
+file /lib/modules/j4fs.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/j4fs.ko 666 0 0
+file /lib/modules/multipdp.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/multipdp.ko 666 0 0
+file /lib/modules/param.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/param.ko 666 0 0
+file /lib/modules/pvrsrvkm.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/pvrsrvkm.ko 666 0 0
+file /lib/modules/rfs_fat.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/rfs_fat.ko 666 0 0
+file /lib/modules/rfs_glue.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/rfs_glue.ko 666 0 0
+file /lib/modules/s3c_bc.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/s3c_bc.ko 666 0 0
+file /lib/modules/s3c_lcd.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/s3c_lcd.ko 666 0 0
+file /lib/modules/scsi_wait_scan.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/scsi_wait_scan.ko 666 0 0
+file /lib/modules/stgloc /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/stgloc 666 0 0
+file /lib/modules/vibrator.ko /Volumes/Data/koush/src/fascinate/initramfs/lib/modules/vibrator.ko 666 0 0
+file /lpm.rc /Volumes/Data/koush/src/fascinate/initramfs/lpm.rc 777 0 0
+file /mnt/.lfs/test /Volumes/Data/koush/src/fascinate/initramfs/mnt/.lfs/test 666 0 0
+file /proc/stgloc /Volumes/Data/koush/src/fascinate/initramfs/proc/stgloc 666 0 0
+file /recovery.rc /Volumes/Data/koush/src/fascinate/initramfs/recovery.rc 777 0 0
+file /res/images/icon_error.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/icon_error.png 777 0 0
+file /res/images/icon_firmware_error.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/icon_firmware_error.png 777 0 0
+file /res/images/icon_firmware_install.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/icon_firmware_install.png 777 0 0
+file /res/images/icon_installing.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/icon_installing.png 777 0 0
+file /res/images/indeterminate1.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/indeterminate1.png 777 0 0
+file /res/images/indeterminate2.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/indeterminate2.png 777 0 0
+file /res/images/indeterminate3.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/indeterminate3.png 777 0 0
+file /res/images/indeterminate4.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/indeterminate4.png 777 0 0
+file /res/images/indeterminate5.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/indeterminate5.png 777 0 0
+file /res/images/indeterminate6.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/indeterminate6.png 777 0 0
+file /res/images/progress_bar_empty.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/progress_bar_empty.png 777 0 0
+file /res/images/progress_bar_empty_left_round.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/progress_bar_empty_left_round.png 777 0 0
+file /res/images/progress_bar_empty_right_round.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/progress_bar_empty_right_round.png 777 0 0
+file /res/images/progress_bar_fill.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/progress_bar_fill.png 777 0 0
+file /res/images/progress_bar_left_round.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/progress_bar_left_round.png 777 0 0
+file /res/images/progress_bar_right_round.png /Volumes/Data/koush/src/fascinate/initramfs/res/images/progress_bar_right_round.png 777 0 0
+file /res/keys /Volumes/Data/koush/src/fascinate/initramfs/res/keys 777 0 0
+file /sbin/adbd /Volumes/Data/koush/src/fascinate/initramfs/sbin/adbd 777 0 0
+file /sbin/devmgr /Volumes/Data/koush/src/fascinate/initramfs/sbin/devmgr 777 0 0
+file /sbin/dfta /Volumes/Data/koush/src/fascinate/initramfs/sbin/dfta 777 0 0
+file /sbin/dfta.sh /Volumes/Data/koush/src/fascinate/initramfs/sbin/dfta.sh 777 0 0
+file /sbin/fat.format /Volumes/Data/koush/src/fascinate/initramfs/sbin/fat.format 777 0 0
+file /sbin/fdump /Volumes/Data/koush/src/fascinate/initramfs/sbin/fdump 777 0 0
+file /sbin/ferase /Volumes/Data/koush/src/fascinate/initramfs/sbin/ferase 777 0 0
+file /sbin/ffdisk /Volumes/Data/koush/src/fascinate/initramfs/sbin/ffdisk 777 0 0
+file /sbin/fota_pipe /Volumes/Data/koush/src/fascinate/initramfs/sbin/fota_pipe 777 0 0
+file /sbin/init /Volumes/Data/koush/src/fascinate/initramfs/sbin/init 777 0 0
+file /sbin/recovery /Volumes/Data/koush/src/fascinate/initramfs/sbin/recovery 777 0 0
+file /sys/stgloc /Volumes/Data/koush/src/fascinate/initramfs/sys/stgloc 666 0 0
+file /system/etc/ld.so.cache /Volumes/Data/koush/src/fascinate/initramfs/system/etc/ld.so.cache 666 0 0
+file /system.prop /Volumes/Data/koush/src/fascinate/initramfs/system.prop 777 0 0
+file /tmp/bootchart/stgloc /Volumes/Data/koush/src/fascinate/initramfs/tmp/bootchart/stgloc 666 0 0
+file /tmp/s3c-keypad.kcm.bin /Volumes/Data/koush/src/fascinate/initramfs/tmp/s3c-keypad.kcm.bin 666 0 0
+file /tmp/s3c-keypad.kl /Volumes/Data/koush/src/fascinate/initramfs/tmp/s3c-keypad.kl 777 0 0
+slink /etc system/etc 777 0 0
+slink /init sbin/init 777 0 0

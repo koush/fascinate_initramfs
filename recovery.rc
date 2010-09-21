@@ -1,0 +1,104 @@
+on init
+###
+# GyuTae FIX : we should not use system partition!!!!!
+#	export PATH /sbin:/bin
+
+	export PATH /sbin:/system/bin
+
+	export ANDROID_ROOT /system
+	export ANDROID_DATA /data
+	export EXTERNAL_STORAGE /sdcard
+
+	mkdir /sdcard
+	mkdir /system
+	mkdir /data
+	mkdir /cache
+	mount tmpfs nodev /tmp
+    # etinum.recovery create /bin for busybox
+	mkdir /bin 0771 system system
+
+	insmod /lib/modules/fsr.ko
+	insmod /lib/modules/fsr_stl.ko
+	insmod /lib/modules/rfs_glue.ko
+	insmod /lib/modules/rfs_fat.ko
+	
+	insmod /lib/modules/j4fs.ko
+	mount j4fs /dev/block/stl6 /mnt/.lfs
+        insmod /lib/modules/dpram_recovery.ko
+ 
+	insmod /lib/modules/param.ko
+
+	mkdir /sdcard 0000 system system
+	mkdir /data 0771 system system
+	mkdir /cache 0770 system cache
+ 
+	
+    #Thomas Ryu, Cache 
+    mount rfs /dev/block/stl11 /cache nosuid nodev check=no
+    chown system cache /cache
+    chmod 0770 /cache
+
+    # This may have been created by the recovery system with odd permissions
+    chown system system /cache/recovery
+    chmod 0770 /cache/recovery
+
+    #This recovery_fota_mode
+    #mkdir /cache/recovery_fota_mode
+    #chmod 0770 /cache/recovery_fota_mode
+    
+    #Garnett/Atlas
+# Do not mount here    
+#    mount rfs /dev/block/mmcblk0p1 /data nosuid nodev check=no
+#    chown system system /data
+#    chmod 0771 /data
+
+# Do not mount here
+#    mkdir /data/fota 0771 system system
+#    chown system system /data/fota
+#    chmod 0771 /data/fota
+#    mount rfs /dev/block/mmcblk0p2 /data/fota nosuid nodev check=no
+#    chown system system /data/fota
+#    chmod 0777 /data/fota
+
+    # Victory
+    #mount rfs /dev/block/stl10 /data nosuid nodev check=no
+    #chown system system /data
+    #chmod 0771 /data
+
+  	mount rfs /dev/block/stl9 /system check=no
+
+on boot
+	#write /sys/class/sec/switch/uart_sel PDA
+#	write /sys/class/sec/switch/usb_sel PDA
+
+	ifup lo
+	hostname localhost
+	domainname localdomain
+
+	class_start default
+
+#	chown system system /sbin/busybox
+
+#service busybox /sbin/busybox --install -s
+#	oneshot
+
+#service console /bin/sh
+#service console /system/bin/sh
+#	console
+
+on property:persist.service.adb.enable=1
+	start adbd
+
+on property:persist.service.adb.enable=0
+	stop adbd
+
+
+#SDCARD is used for FOTA update in recovery mode.
+#This is dependent on partition id decided by boot.
+service vold /system/bin/vold
+    socket vold stream 0660 root mount
+
+service recovery /sbin/recovery
+	oneshot
+
+#service adbd /sbin/adbd recovery

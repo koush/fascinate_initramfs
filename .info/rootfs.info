@@ -1,0 +1,9 @@
+[PLATFORM_INFO]
+platform_name = Android;
+platform_hw = aries rev02;
+[COMPILE_INFO]
+compile_time = 2010-08-05 23:19:43;
+compiled_by  = root;
+compile_host = sep-35;
+compiler_version = arm-linux-gcc (for S3C64XX Samsung Electronics AP Development Team) 4.3.1;
+busybox_version = busybox;
